@@ -27,6 +27,7 @@ CREATE TABLE `lecture_course` (
   `id` bigint(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `instructor_id` bigint(11) NOT NULL,
+  `capacity` smallint NOT NULL DEFAULT 50,
   `from` datetime DEFAULT CURRENT_TIMESTAMP,
   `to` datetime DEFAULT CURRENT_TIMESTAMP,
   `desc` text COMMENT 'blah blah.....',
